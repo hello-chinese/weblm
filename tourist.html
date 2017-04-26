@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/tourist.css">
+</head>
+<body>
+<div class="content">
+    <!--头部-->
+    <header class="clearfix">
+        <div class="header-logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="header-nav">
+            <ul>
+                <li>
+                    <a  href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="#">贷款</a>
+                </li>
+                <li>
+                    <a href="#">理财</a>
+                </li>
+                <li>
+                    <a class="navhover" href="#">游客</a>
+                    <img src="img/down.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--轮播图-->
+    <div class="banner clearfix">
+           <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/touristBan.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                     <img src="img/touristBan.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                     <img src="img/touristBan.png" alt="">
+                </div>
+                 <div class="swiper-slide">
+                     <img src="img/touristBan.png" alt="">
+                </div>
+                
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <!--<div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>-->
+        </div>   
+        <div class="bannerMessage">
+            <ul>
+                <li>
+                    <i>●</i>贷款
+                    <P>骗交学费,手续费,包装费,贷款骗...</P>
+                </li>
+                <li>
+                     <i>●</i>贷款
+                    <P>骗交学费,手续费,包装费,贷款骗...</P>
+                </li>
+                <li>
+                     <i>●</i>贷款
+                    <P>骗交学费,手续费,包装费,贷款骗...</P>
+                </li>
+                <li>
+                     <i>●</i>贷款
+                    <P>骗交学费,手续费,包装费,贷款骗...</P>
+                </li>
+            </ul>
+        </div>
+        <div class="bannerKeyword">
+            <h3>关键词</h3>
+            <div class="workCombination">
+                <div>商贷通</div>
+                <div>信用卡被盗刷</div>
+                <div>农行随薪待</div>
+                <div>白领通</div>
+                <div>借呗</div>
+                <div>微粒袋利息</div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <!--主体-->
+    <div class="tourist-main clearfix">
+        <div class="main-consult">
+            <div class="consult-head clearfix">
+                <h3>理财咨询</h3>
+                <p>更多>></p>
+            </div>
+            <ul>
+                <li>
+                    <img src="img/consultOne.png" alt="">
+                    <div>
+                        <i>●</i>
+                        又有人银行存款被骗光,这些链接千万别再点了!
+                        <p>收到的这样的短信,说积分能换现金</p>
+                    </div>
+                    
+                </li>
+                <li>
+                    <img src="img/consultOne.png" alt="">
+                    <div>
+                        <i>●</i>
+                        又有人银行存款被骗光,这些链接千万别再点了!
+                        <p>收到的这样的短信,说积分能换现金</p>
+                    </div>
+                    
+                </li>
+                <li>
+                    <img src="img/consultOne.png" alt="">
+                    <div>
+                        <i>●</i>
+                        又有人银行存款被骗光,这些链接千万别再点了!
+                        <p>收到的这样的短信,说积分能换现金</p>
+                    </div>
+                    
+                </li>
+            </ul>
+        </div>
+        <div class="main-questions">
+            <div class="questions-head">
+                相关问答
+            </div>
+            <div class="questions-search">
+                <input type="text" placeholder="请输入您的问题">
+                <button type="button">搜索答案</button>
+            </div>
+            <ul>
+                <li><i>●</i>我可以贷款吗,我今年二十岁.</li>
+                <li><i>●</i>我可以贷款吗,我今年二十岁.</li>
+                <li><i>●</i>我可以贷款吗,我今年二十岁.</li>
+                <li><i>●</i>我可以贷款吗,我今年二十岁.</li>
+                <li><i>●</i>我可以贷款吗,我今年二十岁.</li>
+                <li><i>●</i>我可以贷款吗,我今年二十岁.</li>
+                <li><i>●</i>我可以贷款吗,我今年二十岁.</li>
+                <li><i>●</i>我可以贷款吗,我今年二十岁.</li>
+            </ul>
+        </div>
+
+    </div>
+   
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/swiper-3.4.2.jquery.min.js"></script>
+<script>
+    $(function(){
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 30,
+            loop: true
+        });
+    })
+</script>
+</html>

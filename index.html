@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
@@ -17,15 +18,38 @@
         </div>
         <div class="header-nav">
             <ul>
-                <li>首页</li>
-                <li>贷款</li>
-                <li>理财</li>
-                <li>会员</li>
+                <li>
+                    <a class="navhover" href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">贷款</a>
+                </li>
+                <li>
+                    <a href="#">理财</a>
+                </li>
+                <li>
+                    <a href="#">会员</a>
+                    <img src="img/down.png" alt="">
+                </li>
             </ul>
         </div>
     </header>
     <!--轮播图-->
-    <div class="banner">     
+    <div class="banner">
+           <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/bannerOne.png" alt=""></div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <!--<div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>-->
+        </div>   
     </div>
     <!--主体-->
     <div class="main">
@@ -83,11 +107,11 @@
                     <p>&bull;&nbsp; 受资金流动性收紧影响1月银行</br>
                     理财收益率破4%</p>
                     <ul>
-                        <li>sdfsd</li>
-                        <li>sdfsdf</li>
-                        <li>sdfdsf</li>
-                        <li>dsfdsf</li>
-                        <li>dsfdsf</li>
+                        <li>贷款逾期不还浅,会遇到哪些可拍的催收方式?</li>
+                        <li>支招:征信不好怎么贷款?</li>
+                        <li>今年小微企业降成本将"三箭齐发"</li>
+                        <li>2017申请消费贷款,需要注意这些</li>
+                        <li>邮政银行将纳入恒生中国企业指数成分段</li>
                     </ul>
                 </div>
             </div>
@@ -96,5 +120,18 @@
 </div>
 </body>
 <script src="js/jquery-1.11.3.min.js"></script>
-
+<script src="js/swiper-3.4.2.jquery.min.js"></script>
+<script>
+    $(function(){
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 30,
+            loop: true
+        });
+    })
+</script>
 </html>

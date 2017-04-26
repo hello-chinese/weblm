@@ -20,16 +20,32 @@ header > .header-nav{
 header > .header-nav li{
     float: left;
     margin: 0 20px;
+    
+}
+
+header > .header-nav li a{
     color: #000;
     font-size: 16px;
+    font-family:Microsoft YaHei;
+}
+header > .header-nav .navhover{
+     color: #139BFB;
+}
+header > .header-nav li img{
+    width: 8px;
+    height: 5px;
 }
 
 /*轮播图*/
 .content >.banner{
     margin-top: 20px;
-    background: pink;
+    /*background: pink;*/
     height: 300px;
 }
+ .swiper-container {
+            /*width: 600px;*/
+    height: 300px;
+}  
 
 /*主体*/
 .content >.main{
@@ -42,6 +58,7 @@ header > .header-nav li{
 }
 .content >.main >a{
     color: #33A3F3;
+    font:400 9px/14px consolas;
 }
 .main .main-use{
     width: 30%;
@@ -99,6 +116,7 @@ header > .header-nav li{
 .banktitle p:nth-child(2){
     float: right;
     margin-right: 20px;
+    font:400 9px/14px consolas;
 }
 .main-two ul li{
     float: left;
@@ -128,6 +146,7 @@ header > .header-nav li{
 .intertitle p:nth-child(2){
     float: right;
     margin-right: 20px;
+    font:400 9px/14px consolas;
 }
 
 .main-consult {
@@ -142,6 +161,7 @@ header > .header-nav li{
 }
 .main-consult p{
     float: right;
+   font-family:Microsoft YaHei;
     margin-top: 35px;
     margin-right: 30px;
 }
@@ -151,5 +171,6 @@ header > .header-nav li{
     margin-top: 10px;
 }
 .main-consult ul li{
-    margin-bottom: 3px;
+    margin-bottom: 5px;
+    font-family:Microsoft YaHei;
 }

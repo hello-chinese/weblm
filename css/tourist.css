@@ -1,0 +1,250 @@
+body{
+    background:#F5F5F5;
+    text-align: center;
+}
+.content{
+    display: inline-block;
+    width: 80%;   
+}
+/*头部*/
+header{
+    margin-top: 30px;
+}
+header > .header-logo{
+    float: left;
+    top: 4px;
+}
+header > .header-nav{
+    float: right;
+}
+header > .header-nav li{
+    float: left;
+    margin: 0 20px;
+    
+}
+
+header > .header-nav li a{
+    color: #000;
+    font-size: 16px;
+    font-family:Microsoft YaHei;
+}
+header > .header-nav .navhover{
+     color: #139BFB;
+}
+header > .header-nav li img{
+    width: 8px;
+    height: 5px;
+}
+
+/*轮播图*/
+.content >.banner{
+    margin-top: 20px;
+    height: 300px;
+}
+ .swiper-container {
+    width: 500px;
+    height: 300px;
+    float: left;
+    left: 0px;
+    top: 0px;
+}
+.banner >.bannerMessage{
+    float: left;
+    border: 2px solid #EAEAEA;
+    width: 300px;
+    height: 300px;
+
+}
+.banner >.bannerKeyword {
+    float: left;
+    border: 2px solid #EAEAEA;
+    height: 300px;
+    width: 240px;
+    margin-left: 30px;
+}
+.bannerMessage li {
+    color: #27658A;
+    font-family:Microsoft YaHei;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: left;
+}
+.bannerMessage li i{
+    color: #B0B0B0;
+    font-size: 12px;
+    margin-right: 2px;
+}
+
+.bannerMessage li p{
+    font-size: 12px;
+    margin-left: 4px;
+    margin-top: 12px;
+}
+
+.bannerKeyword h3{
+    color:#179CFB;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.bannerKeyword >.workCombination{ 
+    width: 90%;
+    height: 70%;
+    margin-left: 5%;
+    margin-top: 10%;
+    /*background: pink;*/
+    text-align: left;
+}
+.bannerKeyword >.workCombination div {
+    display: inline-block;
+    height: 70px;
+    line-height: 70px;
+    color: #fff; 
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 2px;
+   
+}
+.bannerKeyword >.workCombination div:nth-child(1){
+    background: #2A87FB;
+    width: 38%;
+}
+.bannerKeyword >.workCombination div:nth-child(2){
+    background: #7CB6FF;
+    width: 60%;
+}
+.bannerKeyword >.workCombination div:nth-child(3){
+    background: #3E6DA8;
+    width: 60%;
+}
+.bannerKeyword >.workCombination div:nth-child(4){
+    background: #35C4EE;
+    width: 38%;
+}
+.bannerKeyword >.workCombination div:nth-child(5){
+    background: #6C98CE;
+    width: 38%;
+}
+.bannerKeyword >.workCombination div:nth-child(6){
+    background: #13CFB3;
+    width: 60%;
+}
+
+/*主体*/
+.tourist-main{
+    margin-top: 40px;
+    /*border: 2px solid #ECECEC;*/
+    text-align: left;
+    
+}
+.main-consult{
+    width: 55%;
+    margin-left: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid #ECECEC;
+}
+.main-consult .consult-head h3{
+    color:#179CFB;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    float: left;
+}
+.main-consult .consult-head p{
+    color:#848484;
+     font:400 9px/14px consolas;
+    float: right;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.main-consult ul{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.main-consult ul li{
+    margin-top: 10px;
+
+}
+.main-consult ul img{
+    width: 100px;
+    height: 80px;
+}
+.main-consult li i{
+    color: #B7B7B7;
+    font-size: 8px;
+}
+.main-consult li div{
+    display: inline-block;
+    color: #000;
+    font-family:Microsoft YaHei;
+    font-size: 14px;
+    font-weight: 600px;
+    height: 70px;
+}
+.main-consult li div p{
+    font-size: 12px;
+    margin-left: 10px;
+    color: #858585;
+    position: relative;
+    top: 8px;
+}
+
+
+.main-questions{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 41%;
+    border: 2px solid #ECECEC;
+    margin-left: 20px;
+}
+.main-questions > .questions-head{
+    color:#179CFB;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-weight: 600;
+    /*float: left;*/
+
+}
+.questions-search input{
+   
+    /*width: 100px;*/
+    border: 1px solid #EAEAEA;
+    height: 25px; 
+    width: 300px;
+    background: #F5F5F5;
+
+}
+.questions-search {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.questions-search button{
+    background: #139BFB;
+    margin-left: 10px;
+    color: #fff;
+    width: 100px;
+    height: 25px; 
+    border-radius: 5px;
+}
+.main-questions ul{
+    margin-top: 20px;
+    color: #000;
+    font-family:Microsoft YaHei;
+}
+.main-questions ul li{
+    margin-top: 5px;
+     
+}
+.main-questions i{
+    color: #B7B7B7;
+    font-size: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
